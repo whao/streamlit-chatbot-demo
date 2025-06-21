@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  chatbot:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    # 或者使用环境变量文件
+    # env_file:
+    #   - .env
+    restart: unless-stopped
