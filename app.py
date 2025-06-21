@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 import os
 
-st.title("超级智能助手 Super AI Assistant")
+st.title("🐱猫猫智能体🐱")
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
